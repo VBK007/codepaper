@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:backgroundTint="?android:windowBackground"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:id="@+id/back"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:textSize="22sp"
+            android:id="@+id/p"
+            android:fontFamily="@font/arbutus"
+            android:text="AddPost"
+            />
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:text="POST"
+                android:id="@+id/post"
+                android:padding="10dp"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:fontFamily="@font/alfa_slab_one"
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+
+    <LinearLayout
+        android:weightSum="2"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_baseline_wallpaper_24"
+            android:id="@+id/image"
+            />
+
+
+<com.jaredrummler.materialspinner.MaterialSpinner
+    android:layout_width="match_parent"
+    app:ms_arrow_tint="@android:color/white"
+    android:layout_height="wrap_content"
+    android:id="@+id/spinner"
+app:ms_text_color="@android:color/white"
+
+    app:ms_background_color="@android:color/black"
+    android:textColor="@android:color/white"
+    />
+
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="2"
+            android:layout_marginTop="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:padding="10dp"
+                android:layout_height="wrap_content"
+                app:met_baseColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:hint="Enter Post  Description"
+                android:id="@+id/name"
+                android:textColor="@android:color/white"
+                app:met_textColorHint="@android:color/white"
+                android:textColorHighlight="@android:color/white"
+                />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RadioButton android:id="@+id/sale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sale For Price"
+                        android:onClick="onRadioButtonClicked"/>
+                    <RadioButton android:id="@+id/free"
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content"
+                        android:text="Free Sale"
+                        android:onClick="onRadioButtonClicked"/>
+                </RadioGroup>
+            </LinearLayout>
+
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_baseColor="@android:color/white"
+                android:textColorHint="@android:color/white"
+                android:hint="Enter Amount"
+                android:layout_marginTop="20dp"
+                android:inputType="number"
+                android:id="@+id/amount"
+                android:textColor="@android:color/white"
+                app:met_textColorHint="@android:color/white"
+                android:textColorHighlight="@android:color/white"
+                />
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

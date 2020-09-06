@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Descpost">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:background="?android:windowBackground"
+        android:layout_height="50dp">
+
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/ic_baseline_cancel_24"
+                android:id="@+id/cancel"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="EditPost"
+                android:textSize="22sp"
+                android:fontFamily="@font/arbutus"
+                android:layout_marginLeft="5dp"
+                />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:id="@+id/ok"
+                    android:src="@drawable/ic_baseline_check_24"
+                    android:layout_alignParentRight="true"
+
+                    />
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="350dp"
+
+    android:src="@drawable/ic_baseline_wallpaper_24"
+    android:id="@+id/image"
+/>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="2"
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:layout_height="wrap_content"
+            app:met_baseColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:hint="Enter Post  Description"
+            android:id="@+id/name"
+            android:textColor="@android:color/white"
+            app:met_textColorHint="@android:color/white"
+            android:textColorHighlight="@android:color/white"
+            />
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <RadioButton android:id="@+id/sale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sale For Price"
+                    android:onClick="onRadioButtonClicked"
+                   />
+                <RadioButton android:id="@+id/free"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="Free Sale"
+                    android:onClick="onRadioButtonClicked"/>
+            </RadioGroup>
+        </LinearLayout>
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_baseColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:hint="Enter Amount"
+            android:layout_marginTop="20dp"
+            android:inputType="number"
+            android:id="@+id/amount"
+            android:textColor="@android:color/white"
+            app:met_textColorHint="@android:color/white"
+            android:textColorHighlight="@android:color/white"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>

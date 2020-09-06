@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Category">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar"
+        android:background="?android:windowBackground">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tx1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/alfa_slab_one"
+                android:text="Hello"
+                android:textSize="24sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tx1"
+                android:layout_marginLeft="25dp"
+                android:maxLines="1"
+                android:id="@+id/username"
+                android:fontFamily="@font/arbutus"
+                android:text="@string/app_name"
+                android:textSize="26sp" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/ic_baseline_add_photo_alternate_24"
+                android:layout_toLeftOf="@+id/userimage"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="12dp"
+                android:id="@+id/add"
+                />
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:id="@+id/userimage"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                app:civ_border_color="@android:color/white"
+                app:civ_border_width="2dp"
+                android:src="@drawable/ic_baseline_account_circle_24"
+                />
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/recycle"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+
+</LinearLayout>

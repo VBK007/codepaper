@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:backgroundTint="?android:windowBackground"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:id="@+id/back"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                    android:layout_marginLeft="5dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="22sp"
+                    android:text="Edit Profile"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/alfa_slab_one"
+
+                    />
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="34dp"
+                        android:layout_height="34dp"
+                        android:id="@+id/ok"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_baseline_check_24"
+                        />
+
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <RelativeLayout
+            android:layout_marginTop="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="150dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/ic_baseline_account_circle_24"
+                    android:id="@+id/userimage"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@android:color/white"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="19sp"
+                    android:id="@+id/click"
+                    android:maxLines="1"
+                    android:fontFamily="@font/alfa_slab_one"
+                    android:text="Click Me to add Profile Image"
+                    />
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your Email"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/arbutus"
+                        />
+
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_marginTop="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edtEmail"
+                        app:met_textColorHint="@android:color/white"
+                        android:textColorHighlight="@android:color/white"
+                        android:textColor="@android:color/white"
+                        app:met_baseColor="@android:color/white"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your Password"
+                        android:layout_marginTop="3dp"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/arbutus"
+                        />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edtpassword"
+                        app:met_textColorHint="@android:color/white"
+                        android:textColorHighlight="@android:color/white"
+                        android:textColor="@android:color/white"
+                        app:met_baseColor="@android:color/white"
+
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your Username"
+                        android:textSize="18sp"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/arbutus"
+                        />
+
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_marginTop="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editusername"
+                        app:met_textColorHint="@android:color/white"
+                        android:textColorHighlight="@android:color/white"
+                        android:textColor="@android:color/white"
+                        app:met_baseColor="@android:color/white"
+                        />
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your PhoneNo"
+                        android:textSize="18sp"
+                        android:layout_marginTop="3dp"
+
+                        android:fontFamily="@font/arbutus"
+                        />
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/editphone"
+                        android:text="phone"
+                        android:inputType="number"
+                        android:layout_marginTop="10dp"
+                        app:met_textColorHint="@android:color/white"
+                        android:textColorHighlight="@android:color/white"
+                        android:textColor="@android:color/white"
+                        app:met_baseColor="@android:color/white"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            >
+                            <ImageView
+                                android:layout_width="54dp"
+                                android:src="@drawable/gp"
+                                android:layout_height="54dp"/>
+
+                            <TextView
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Your Gpay Name:"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/arbutus"
+                                android:layout_marginTop="3dp"
+                                />
+
+
+
+                        </LinearLayout>
+
+
+
+
+                    </RelativeLayout>
+
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edtgpayname"
+                        android:hint="Enter Gpay Name"
+                        android:inputType="text"
+                        android:layout_marginTop="10dp"
+                        app:met_textColorHint="@android:color/white"
+                        android:textColorHighlight="@android:color/white"
+                        android:textColor="@android:color/white"
+                        app:met_baseColor="@android:color/white"
+                        />
+
+
+
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <ImageView
+                                android:layout_width="54dp"
+                                android:src="@drawable/gp"
+                                android:layout_height="54dp"/>
+
+                            <TextView
+                                android:layout_gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Your Gpay UPIID:"
+                                android:textSize="16sp"
+                                android:fontFamily="@font/arbutus"
+                                android:layout_marginTop="3dp"
+                                />
+
+
+
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+
+                    <com.rengwuxian.materialedittext.MaterialEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ediuppid"
+                        android:hint="Enter the Gpay UPIID"
+                        app:met_textColorHint="@android:color/white"
+                        android:textColorHighlight="@android:color/white"
+                        android:textColor="@android:color/white"
+                        app:met_baseColor="@android:color/white"
+                        />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/hint"
+                            android:layout_alignParentRight="true"
+                            android:textColor="@android:color/holo_blue_dark"
+                            android:text="@string/hint_to_add_upi"
+                            android:layout_marginTop="5dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold"/>
+
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

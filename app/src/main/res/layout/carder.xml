@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    android:layout_margin="3dp"
+    android:padding="10dp"
+    android:layout_height="250dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:id="@+id/catergoryimage"
+            android:src="@drawable/bc"
+            tools:ignore="MissingConstraints" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/lock"
+            android:visibility="invisible"
+            android:src="@drawable/ic_baseline_lock_24"
+            android:layout_centerInParent="true"
+
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+</com.google.android.material.card.MaterialCardView>

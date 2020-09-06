@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:background="@drawable/a"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+    android:backgroundTint="@android:color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtEmail"
+            android:hint="Email"
+
+            android:inputType="textEmailAddress"
+            android:text=""
+            android:textSize="20sp"
+            android:textColorHint="@color/colorPrimary"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:met_singleLineEllipsis="true"
+            app:met_baseColor="@color/colorPrimary"
+            app:met_floatingLabel="highlight"
+            app:met_primaryColor="@color/colorPrimary"
+            />
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            app:passwordToggleEnabled="true"
+            app:hintEnabled="false"
+            android:layout_height="wrap_content">
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/edtpassword"
+                android:hint="Password"
+                android:inputType="textWebPassword"
+                android:backgroundTint="@android:color/white"
+                android:text=""
+                android:textSize="20sp"
+                android:textColorHint="@color/colorPrimary"
+                android:textColor="@android:color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:met_singleLineEllipsis="true"
+                app:met_baseColor="@color/colorPrimary"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="@color/colorPrimary"
+                />
+
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnche"
+            android:gravity="center_vertical"
+            android:text="Remember Me"
+            android:textColor="@android:color/black"
+
+
+            />
+
+
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
