@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    app:cardElevation="10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:backgroundTint="@android:color/darker_gray"
+    android:layout_height="390dp"
+    style="@style/Theme.AppCompat.Light.NoActionBar"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:src="@drawable/ic_baseline_wallpaper_24"
+        android:scaleType="fitCenter"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/selectimage"
+        />
+<com.rengwuxian.materialedittext.MaterialEditText
+    android:layout_width="match_parent"
+    android:textColorHint="@android:color/white"
+    app:met_textColorHint="@android:color/white"
+    android:hint="Enter Name"
+    android:inputType="text"
+    android:textColor="@android:color/white"
+    android:textSize="22sp"
+    android:id="@+id/editname"
+    android:layout_height="wrap_content"/>
+
+
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <RadioButton android:id="@+id/radio_pirates"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sale For Price"
+            android:onClick="onRadioButtonClicked"/>
+        <RadioButton android:id="@+id/radio_ninjas"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="wrap_content"
+            android:text="Free Sale"
+            android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+</LinearLayout>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:textColorHint="@android:color/white"
+        app:met_textColorHint="@android:color/white"
+        android:hint="Enter Amount"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        android:id="@+id/edtdesc"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>

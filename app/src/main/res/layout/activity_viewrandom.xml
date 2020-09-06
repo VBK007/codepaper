@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".viewrandom">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="450dp">
+
+
+
+
+
+            <ImageView
+                android:src="@drawable/bc"
+                android:scaleType="fitXY"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/imageview"
+                />
+            <ImageView
+                android:layout_alignParentStart="true"
+                android:layout_width="34dp"
+                android:id="@+id/back"
+                android:background="@android:color/black"
+                android:layout_height="34dp"
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                android:layout_alignParentLeft="true" />
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:src="@drawable/ic_baseline_cloud_download_24"
+                    android:layout_width="54dp"
+                    android:layout_height="44dp"
+                    android:background="@android:color/black"
+                    app:civ_border_width="4dp"
+                    app:civ_border_color="@android:color/white"
+                    android:id="@+id/download"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+
+                    />
+
+
+
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:src="@drawable/ic_baseline_wallpaper_24"
+                    android:layout_width="54dp"
+                    android:layout_height="44dp"
+                    android:id="@+id/setwall"
+                    android:background="@android:color/black"
+                    app:civ_border_color="@android:color/white"
+                    app:civ_border_width="4dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+
+                    />
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_margin="3dp"
+            android:text="published by"
+            android:fontFamily="@font/almendra_sc"
+            />
+
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            app:cardElevation="10dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="68dp">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/userimage"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"/>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/app_name"
+                        android:id="@+id/username"
+                        android:layout_gravity="center_horizontal"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/arbutus"
+                        />
+
+
+                    <ImageView
+                        android:layout_width="34dp"
+                        android:layout_height="30dp"
+                        android:id="@+id/like"
+                        android:src="@drawable/ic_baseline_favorite_border_24"
+                        android:layout_below="@+id/username"
+                        android:layout_marginLeft="4dp"
+
+
+                        />
+                    <TextView
+                        android:text="likes"
+                        android:textSize="15sp"
+                        android:fontFamily="@font/alfa_slab_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/likes"
+                        android:layout_toRightOf="@+id/like"
+                        android:layout_below="@+id/username"
+                        android:paddingLeft="20dp"
+                        />
+
+                    <ImageView
+                        android:layout_width="44dp"
+                        android:layout_height="34dp"
+                        android:id="@+id/save"
+                        android:src="@drawable/ic_baseline_bookmark_border_24"
+                        android:layout_below="@+id/username"
+                        android:layout_toRightOf="@+id/likes"
+                        android:paddingLeft="10dp"
+                        />
+
+
+
+
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.button.MaterialButton
+                        android:layout_width="wrap_content"
+                        android:textSize="12sp"
+                        android:text="Follow"
+                        android:backgroundTint="@android:color/holo_blue_dark"
+                        android:id="@+id/follow"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@android:color/white"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Random Wallpaers"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/recyclepost"
+                android:layout_height="wrap_content"/>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:text="From Codeplays"
+                android:textColor="@android:color/white"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="100dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/arbutus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

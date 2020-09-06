@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/a"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+
+    <RelativeLayout
+        android:background="@drawable/a"
+        android:layout_width="match_parent"
+        android:layout_height="380dp">
+        <RelativeLayout
+            android:layout_alignParentStart="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                android:layout_width="34dp"
+                android:id="@+id/back"
+                android:layout_height="34dp"/>
+
+
+                <TextView
+                    android:id="@+id/username"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/alfa_slab_one"
+                    android:text="Codeplays"
+                    android:layout_toRightOf="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+
+
+<ImageView
+    android:layout_width="34dp"
+    android:layout_height="34dp"
+    android:layout_alignParentRight="true"
+android:src="@drawable/ic_baseline_exit_to_app_24"
+    android:id="@+id/exit"
+    />
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/userimagela"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="50dp"
+                android:layout_width="120dp"
+                android:layout_height="110dp"
+                android:id="@+id/another"
+                android:src="@drawable/ic_baseline_account_circle_24"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@android:color/darker_gray"
+                />
+
+
+
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="50dp"
+                android:layout_width="120dp"
+                android:layout_height="110dp"
+                android:id="@+id/userimage"
+                android:visibility="invisible"
+                android:src="@drawable/bc"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@android:color/darker_gray"
+                />
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+        <RelativeLayout
+            android:layout_toRightOf="@+id/userimagela"
+            android:layout_marginTop="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/lintop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/nrpost"
+                   android:layout_above="@+id/post"
+                   android:textSize="16sp"
+                   android:text="1"
+
+                   android:textColor="@android:color/white"
+                   android:fontFamily="@font/arbutus"
+                   tools:ignore="NotSibling" />
+                <TextView
+                    android:layout_marginLeft="85dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nrfollowing"
+                    android:textSize="16sp"
+                    android:text="1"
+                    android:layout_toRightOf="@+id/nrpost"
+                    android:layout_above="@+id/fol"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/arbutus"
+                    tools:ignore="NotSibling" />
+                <TextView
+                    android:layout_marginLeft="75dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/nrfollowers"
+                    android:layout_toRightOf="@+id/nrfollowing"
+                    android:textSize="16sp"
+                    android:text="1"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/arbutus"
+                    tools:ignore="UnknownId" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/lintop"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/post"
+
+                    android:textSize="14sp"
+                    android:text="Posts"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/arbutus"
+                    />
+                <TextView
+                    android:layout_marginLeft="15dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/post"
+                    android:id="@+id/fol"
+                    android:textSize="14sp"
+                    android:text="Following"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/arbutus"
+                    />
+                <TextView
+
+                    android:layout_toRightOf="@+id/fol"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="wrap_content"
+                    android:maxLines="1"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Folllowing"
+                    android:textSize="13sp"
+                    android:text="Followers"
+                    android:textColor="@android:color/white"
+                    android:fontFamily="@font/arbutus"
+                    />
+
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:text="Emasil"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:fontFamily="@font/arbutus"
+            android:layout_below="@id/userimagela"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone"
+            android:text="MobileNo"
+            android:layout_marginTop="5dp"
+            android:textSize="18sp"
+            android:maxLines="1"
+            android:fontFamily="@font/arbutus"
+            android:layout_below="@id/email"
+            />
+
+
+
+        <RelativeLayout
+            android:id="@+id/upiidl"
+            android:layout_below="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="54dp"
+                android:id="@+id/im"
+                android:layout_height="54dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/gp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/upiid"
+                android:text="MyUPIID"
+                android:layout_toRightOf="@+id/im"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:maxLines="1"
+                android:fontFamily="@font/arbutus"
+
+                />
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+        <Button
+            android:text="Edit Profile"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="12dp"
+            android:backgroundTint="@color/color"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:id="@+id/editpro"
+            android:layout_below="@+id/upiidl"
+            android:layout_marginTop="6dp"
+
+            />
+        <Button
+            android:text="Donate"
+            android:drawableLeft="@drawable/ic_baseline_attach_money_24"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="12dp"
+            android:backgroundTint="@color/cl"
+            android:layout_width="140dp"
+            android:id="@+id/donate"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/editpro"
+            android:layout_below="@+id/upiidl"
+            android:layout_marginTop="6dp"
+
+            />
+
+
+
+
+
+
+        <!--<ImageView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_below="@+id/email"-->
+<!--    android:layout_marginTop="5dp"-->
+<!--    android:src="@drawable/ic_baseline_call_24"-->
+<!--    android:id="@+id/call"-->
+<!--    />-->
+
+
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="8056761850"-->
+<!--            android:layout_toRightOf="@+id/call"-->
+<!--            android:layout_below="@+id/email"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:id="@+id/userno"-->
+<!--            android:layout_marginLeft="3dp"-->
+<!--            android:textSize="18sp"-->
+<!--            android:fontFamily="@font/arbutus"-->
+<!--            />-->
+
+       <RelativeLayout
+           android:layout_alignParentBottom="true"
+           android:padding="10dp"
+           android:layout_marginTop="15dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+           <androidx.cardview.widget.CardView
+               app:cardElevation="10dp"
+               android:layout_marginTop="20dp"
+               android:layout_alignParentBottom="true"
+               android:padding="10dp"
+               android:backgroundTint="@android:color/white"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+               <TextView
+                   android:layout_gravity="center_horizontal"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:textSize="15sp"
+android:fontFamily="@font/arbutus"
+                   android:maxLines="1"
+                   android:textColor="@android:color/holo_green_light"
+                   android:text="Your Post with Code Plays"
+
+                   />
+
+           </androidx.cardview.widget.CardView>
+
+
+
+       </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="3dp"
+    android:id="@+id/recycle"
+    />
+
+
+
+</LinearLayout>

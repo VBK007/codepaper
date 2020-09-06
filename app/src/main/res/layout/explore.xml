@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<com.google.android.material.appbar.AppBarLayout
+    android:layout_width="match_parent"
+    android:background="?android:windowBackground"
+    android:layout_height="wrap_content">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.mancj.materialsearchbar.MaterialSearchBar
+            style="@style/AppTheme"
+            android:layout_alignParentRight="true"
+            app:mt_hintColor="@android:color/white"
+            android:layout_width="match_parent"
+            app:mt_speechMode="false"
+            android:id="@+id/search"
+            android:background="@color/colorPrimary"
+            app:mt_hint="Enter anything to search "
+            app:mt_placeholder="Enter Anything to Search"
+            app:mt_maxSuggestionsCount="10"
+            android:layout_height="wrap_content"
+            android:textColorHint="@android:color/white"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+</com.google.android.material.appbar.AppBarLayout>
+
+
+<androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/recycle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"/>
+
+
+</LinearLayout>

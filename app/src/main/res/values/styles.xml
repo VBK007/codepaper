@@ -1,0 +1,33 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#B5FFFFFF</item>
+        <item name="colorPrimaryDark">#4DEDE7E7</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+
+<style name="CollapseAppBar" parent="@style/TextAppearance.AppCompat.Medium">
+
+    <item name="android:textSize">24sp</item>
+<item name="android:textColor">@android:color/white</item>
+<item name="android:textStyle">normal</item>
+</style>
+
+
+
+
+    <style name="ExpandedAppBar" parent="@style/TextAppearance.AppCompat.Display1">
+        <item name="android:textSize">24sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">#4f0e0d0e</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">normal</item>
+
+
+    </style>
+
+
+</resources>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bc"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to"
+        android:textSize="22sp"
+        android:fontFamily="@font/arbutus"
+        android:id="@+id/welcome"
+        android:layout_marginTop="100dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="24sp"
+        android:layout_marginLeft="4dp"
+        android:layout_toRightOf="@+id/welcome"
+        android:fontFamily="@font/arbutus"
+        android:id="@+id/appname"
+        android:layout_marginTop="100dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/welcome"
+        android:fontFamily="@font/vampiro_one"
+        android:text="Explore Anything you want"
+
+        android:textSize="20sp" />
+
+  <RelativeLayout
+      android:layout_alignParentBottom="true"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="From Codeplays"
+          android:gravity="center_horizontal"
+          android:layout_marginBottom="30dp"
+          android:layout_marginLeft="50dp"
+          android:textSize="22sp"
+          android:fontFamily="@font/arbutus"
+          android:id="@+id/from"
+          android:layout_marginTop="100dp"
+          />
+
+
+  </RelativeLayout>
+
+
+
+</RelativeLayout>

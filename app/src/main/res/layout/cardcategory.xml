@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    android:layout_margin="5dp"
+    android:padding="10dp"
+    android:layout_height="250dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:id="@+id/catergoryimage"
+            android:src="@drawable/bc"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:textColor="@android:color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/arbutus"
+            android:gravity="center_horizontal"
+            android:text="Category"
+            android:layout_centerInParent="true"
+            android:textSize="22sp"
+            android:background="#BF333333"
+            app:layout_constraintEnd_toEndOf="@+id/catergoryimage"
+            app:layout_constraintStart_toStartOf="@+id/catergoryimage"
+            tools:layout_editor_absoluteY="116dp"
+            tools:ignore="MissingConstraints" />
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+</com.google.android.material.card.MaterialCardView>
