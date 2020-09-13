@@ -33,7 +33,7 @@
         <meta-data
             android:name="com.google.android.gms.wallet.api.enabled"
             android:value="true" />
-        <activity android:name=".Descpost"></activity>
+        <activity android:name=".Descpost"/>
         <activity android:name=".viewshop" />
         <activity android:name=".Fragment.addPost" />
         <activity android:name=".editprofile" />
