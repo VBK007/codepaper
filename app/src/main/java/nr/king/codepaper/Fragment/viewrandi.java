@@ -59,9 +59,9 @@ import nr.king.codepaper.Adapter.randomwall;
 import nr.king.codepaper.Common.Common;
 import nr.king.codepaper.Home;
 import nr.king.codepaper.Model.List;
-import nr.king.codepaper.Model.USer;
 import nr.king.codepaper.R;
 import nr.king.codepaper.SaveImageUrl;
+import nr.king.codepaper.USer;
 import nr.king.codepaper.viewwall;
 
 import static com.firebase.ui.auth.AuthUI.getApplicationContext;

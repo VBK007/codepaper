@@ -36,9 +36,9 @@ import de.hdodenhof.circleimageview.CircleImageView;
 import nr.king.codepaper.Adapter.CategoryAdapter;
 import nr.king.codepaper.Common.Common;
 import nr.king.codepaper.Model.Category;
-import nr.king.codepaper.Model.USer;
 import nr.king.codepaper.Model.User;
 import nr.king.codepaper.R;
+import nr.king.codepaper.USer;
 
 public class homefrag extends Fragment {
     FirebaseAuth mAuth;

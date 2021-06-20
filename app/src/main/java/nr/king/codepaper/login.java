@@ -28,11 +28,9 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.rengwuxian.materialedittext.MaterialEditText;
-
 import dmax.dialog.SpotsDialog;
 import io.paperdb.Paper;
 import nr.king.codepaper.Common.Common;
-import nr.king.codepaper.Model.USer;
 
 public class login extends AppCompatActivity {
 Button lreg,login;

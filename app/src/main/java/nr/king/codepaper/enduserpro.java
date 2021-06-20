@@ -31,7 +31,6 @@ import java.util.List;
 import de.hdodenhof.circleimageview.CircleImageView;
 import nr.king.codepaper.Adapter.ListAdapter;
 import nr.king.codepaper.Common.Common;
-import nr.king.codepaper.Model.USer;
 
 public class enduserpro  extends AppCompatActivity {
     TextView username,email,phone,uppid;

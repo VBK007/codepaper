@@ -43,7 +43,6 @@ import java.util.UUID;
 import de.hdodenhof.circleimageview.CircleImageView;
 import dmax.dialog.SpotsDialog;
 import nr.king.codepaper.Common.Common;
-import nr.king.codepaper.Model.USer;
 import nr.king.codepaper.Model.User;
 
 

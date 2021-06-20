@@ -60,7 +60,6 @@ import nr.king.codepaper.Adapter.randomwall;
 import nr.king.codepaper.Adapter.viewwalladapter;
 import nr.king.codepaper.Common.Common;
 import nr.king.codepaper.Fragment.userhome;
-import nr.king.codepaper.Model.USer;
 import nr.king.codepaper.Model.User;
 
 public class viewwall extends AppCompatActivity {

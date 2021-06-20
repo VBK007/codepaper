@@ -50,8 +50,8 @@ import dmax.dialog.SpotsDialog;
 import nr.king.codepaper.Common.Common;
 import nr.king.codepaper.Home;
 import nr.king.codepaper.Model.Category;
-import nr.king.codepaper.Model.USer;
 import nr.king.codepaper.R;
+import nr.king.codepaper.USer;
 import nr.king.codepaper.editprofile;
 import nr.king.codepaper.login;
 

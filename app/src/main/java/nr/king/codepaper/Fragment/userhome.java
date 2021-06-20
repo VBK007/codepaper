@@ -34,9 +34,9 @@ import de.hdodenhof.circleimageview.CircleImageView;
 import nr.king.codepaper.Adapter.ListAdapter;
 import nr.king.codepaper.Common.Common;
 import nr.king.codepaper.Home;
-import nr.king.codepaper.Model.USer;
 import nr.king.codepaper.Model.User;
 import nr.king.codepaper.R;
+import nr.king.codepaper.USer;
 import nr.king.codepaper.editprofile;
 
 public class userhome extends Fragment {

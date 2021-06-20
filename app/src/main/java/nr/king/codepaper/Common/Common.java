@@ -3,8 +3,8 @@ package nr.king.codepaper.Common;
 import com.google.firebase.auth.FirebaseUser;
 
 import nr.king.codepaper.Model.List;
-import nr.king.codepaper.Model.USer;
 import nr.king.codepaper.Model.User;
+import nr.king.codepaper.USer;
 
 public class Common {
     public static final int SIGN_INREQUEST_CODE =99 ;
@@ -22,7 +22,7 @@ public class Common {
     public static String CATEGORY_NAME ;
     public static  String CATEGORY_ID;
     public static String CATEGORY_ID_SELECTED ;
-public static List select_background=new List();
+    public static List select_background=new List();
 
     public static String List_ID;
     public static String User_IMAGE;
