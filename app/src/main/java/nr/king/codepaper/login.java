@@ -14,6 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.coordinatorlayout.widget.CoordinatorLayout;
 
 import com.google.android.gms.tasks.OnFailureListener;
@@ -34,7 +35,7 @@ import nr.king.codepaper.Common.Common;
 
 public class login extends AppCompatActivity {
 Button lreg,login;
-CoordinatorLayout rootlayout;
+ConstraintLayout rootlayout;
     FirebaseAuth auth;
     FirebaseDatabase db;
     FirebaseUser firebaseUser;

@@ -1,8 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <integer name="animation_dur_medium">3000</integer>
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="design_navigation_separator_vertical_padding" tools:override="true">0dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_vertical_margin_top">10dp</dimen>
+    <dimen name="activity_vertical_margin_bopttom">20dp</dimen>
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">170dp</dimen>
+    <dimen name="_5sdp">50dp</dimen>
+    <dimen name="_3sdp">3dp</dimen>
+    <dimen name="_9sdp">9dp</dimen>
+    <dimen name="_10dp">10dp</dimen>
+
+    <!-- font size thorugh out the application-->
+    <dimen name="_24sdp">24sp</dimen>
+    <dimen name="_10sdp">10sp</dimen>
+    <dimen name="_12sdp">12sp</dimen>
+    <dimen name="_14sdp">14sp</dimen>
+    <dimen name="_16sdp">16dp</dimen>
+    <dimen name="_20sdp">20dp</dimen>
+    <dimen name="_4sdp">4dp</dimen>
+    <dimen name="_5dp">5dp</dimen>
+    <dimen name="_52dp">48dp</dimen>
+
+
+    <dimen name="_48dp">60dp</dimen>
+    <dimen name="_30dp_dimen">30dp</dimen>
+    <dimen name="_40dp">48dp</dimen>
+
+    <dimen name="medium">14sp</dimen>
+    <dimen name="header">22sp</dimen>
+    <dimen name="subheader">11sp</dimen>
+    <dimen name="small">12sp</dimen>
+    <dimen name="large">16sp</dimen>
+    <dimen name="xlarge">21sp</dimen>
+    <dimen name="xxlarge">22sp</dimen>
+    <dimen name="xxxlarge">24sp</dimen>
+
+    //event list row
+
+    <dimen name="xsmall">11sp</dimen>
+    <dimen name="xxsmall">10sp</dimen>
+    <dimen name="_21dp">21dp</dimen>
+    <dimen name="_19sp">19sp</dimen>
+    <dimen name="_35">35dp</dimen>
+    <dimen name="_22sp">22dp</dimen>
+    <dimen name="_18sp">18sp</dimen>
+    <dimen name="_40dpevent">40dp</dimen>
+    <dimen name="_52cdp">52dp</dimen>
+
+    <dimen name="simpletooltip_max_width">250dp</dimen>
+
+
+
+
+
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="activity_margin_quarter">4dp</dimen>
+    <dimen name="activity_margin_content">24dp</dimen>
+    <dimen name="activity_margin_half">8dp</dimen>
+
+    <dimen name="paddingItemDecorationDefault">8dp</dimen>
+    <dimen name="paddingItemDecorationEdge">24dp</dimen>
+
+    <dimen name="poster_thumb_width">72dp</dimen>
+    <dimen name="poster_thumb_height">96dp</dimen>
+
+    <dimen name="poster_hero_height">192dp</dimen>
+    <dimen name="radius">5dp</dimen>
+    <dimen name="dots_height">8dp</dimen>
+
+    <!-- font size thorugh out the application-->
+
+
+    <dimen name="grid_dime">120dp</dimen>
+    <dimen name="grid_item_spacing">2dp</dimen>
+
+
+
+
+    //dimesions
+    <dimen name="image_margin">48dp</dimen>
+    <dimen name="card_padding">40dp</dimen>
+
 
 </resources>

@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical"
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:orientation="vertical"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 <com.google.android.material.appbar.AppBarLayout
     android:layout_width="match_parent"
+    android:id="@+id/appbar"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
     android:backgroundTint="?android:windowBackground"
     android:layout_height="wrap_content">
 
@@ -72,10 +77,13 @@
 
 
     <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/appbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         android:weightSum="2"
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="350dp"
@@ -171,4 +179,4 @@ app:ms_text_color="@android:color/white"
 
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
